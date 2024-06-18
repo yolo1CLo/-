@@ -30,9 +30,6 @@ class Ui_Form(object):
         self.W_DSB = QDoubleSpinBox(Form)
         self.W_DSB.setObjectName(u"W_DSB")
         self.W_DSB.setGeometry(QRect(310, 150, 62, 24))
-        self.pushButton_2 = QPushButton(Form)
-        self.pushButton_2.setObjectName(u"pushButton_2")
-        self.pushButton_2.setGeometry(QRect(290, 280, 80, 23))
         self.resultLabel = QLabel(Form)
         self.resultLabel.setObjectName(u"label")
         self.resultLabel.setGeometry(QRect(130, 20, 211, 500))
@@ -48,7 +45,6 @@ class Ui_Form(object):
         self.label_5.setText(QCoreApplication.translate("Form", u"Input for grade", None))
         self.label_4.setText(QCoreApplication.translate("Form", u"Now we are looking for the Force", None))
         self.label_2.setText(QCoreApplication.translate("Form", u"Input for distance", None))
-        self.pushButton_2.setText(QCoreApplication.translate("Form", u"Calculate", None))
         self.resultLabel.setText(QCoreApplication.translate("Form", u"Here results will be showed", None))
 
     # retranslateUi

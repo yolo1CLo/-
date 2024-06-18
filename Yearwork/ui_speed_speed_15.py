@@ -21,9 +21,6 @@ class Ui_Form(object):
         self.t_DSB = QDoubleSpinBox(Form)
         self.t_DSB.setObjectName(u"t_DSB")
         self.t_DSB.setGeometry(QRect(240, 150, 62, 24))
-        self.pushButton_2 = QPushButton(Form)
-        self.pushButton_2.setObjectName(u"pushButton_2")
-        self.pushButton_2.setGeometry(QRect(160, 200, 80, 23))
         self.label_3 = QLabel(Form)
         self.label_3.setObjectName(u"label_3")
         self.label_3.setGeometry(QRect(230, 100, 101, 31))
@@ -40,7 +37,6 @@ class Ui_Form(object):
         self.label.setText(QCoreApplication.translate("Form", u"Now we are looking for the speed", None))
         self.pushButton.setText(QCoreApplication.translate("Form", u"<- Return", None))
         self.label_2.setText(QCoreApplication.translate("Form", u"Input for distance", None))
-        self.pushButton_2.setText(QCoreApplication.translate("Form", u"Calculate", None))
         self.label_3.setText(QCoreApplication.translate("Form", u"Input for time", None))
         self.resultLabel.setText(QCoreApplication.translate("Form", u"Here results will be showed", None))
 

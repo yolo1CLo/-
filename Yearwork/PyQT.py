@@ -33,7 +33,6 @@ from ui_speed_speed_15 import Ui_Form as Ui_Form_SpeedSpeed
 from ui_kin_E_18 import Ui_Form as Ui_Form_KineticEnergy
 from ui_kin_m_16 import Ui_Form as Ui_Form_KineticMass
 from ui_kin_s_17 import Ui_Form as Ui_Form_KineticSpeed
-
 class Calc(QMainWindow):
     def __init__(self, stackWidget):
         super(Calc, self).__init__()
@@ -515,8 +514,8 @@ class MyWindow(QMainWindow):
         self.ui = ui_main_screen_0.Ui_Form()
         self.ui.setupUi(self)
         self.stackWidget = stackWidget
-        self.pushButton.clicked.connect(self.gotoGraphGenerator)
-        self.pushButton_2.clicked.connect (self.gotoCalc)
+        self.ui.pushButton_2.clicked.connect(self.gotoGraphGenerator)
+        self.ui.pushButton.clicked.connect (self.gotoCalc)
 
     def gotoCalc (self):
         self.stackWidget.setCurrentIndex (1)

@@ -16,9 +16,6 @@ class Ui_Form(object):
         self.label_3 = QLabel(Form)
         self.label_3.setObjectName(u"label_3")
         self.label_3.setGeometry(QRect(80, 70, 101, 31))
-        self.pushButton_2 = QPushButton(Form)
-        self.pushButton_2.setObjectName(u"pushButton_2")
-        self.pushButton_2.setGeometry(QRect(190, 210, 80, 23))
         self.label_4 = QLabel(Form)
         self.label_4.setObjectName(u"label_4")
         self.label_4.setGeometry(QRect(300, 70, 101, 31))
@@ -38,7 +35,6 @@ class Ui_Form(object):
         Form.setWindowTitle(QCoreApplication.translate("Form", u"Form", None))
         self.pushButton.setText(QCoreApplication.translate("Form", u"<- Return", None))
         self.label_3.setText(QCoreApplication.translate("Form", u"Input for mass", None))
-        self.pushButton_2.setText(QCoreApplication.translate("Form", u"Calculate", None))
         self.label_4.setText(QCoreApplication.translate("Form", u"Input for Energy", None))
         self.resultLabel.setText(QCoreApplication.translate("Form", u"Here results will be showed", None))
 

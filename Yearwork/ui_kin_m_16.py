@@ -18,9 +18,6 @@ class Ui_Form(object):
         self.s_DSB = QDoubleSpinBox(Form)
         self.s_DSB.setObjectName(u"s_DSB")
         self.s_DSB.setGeometry(QRect(120, 130, 62, 24))
-        self.pushButton_2 = QPushButton(Form)
-        self.pushButton_2.setObjectName(u"pushButton_2")
-        self.pushButton_2.setGeometry(QRect(200, 220, 80, 23))
         self.label = QLabel(Form)
         self.label.setObjectName(u"label")
         self.label.setGeometry(QRect(140, 30, 211, 16))
@@ -41,7 +38,6 @@ class Ui_Form(object):
         self.label_4.setText(QCoreApplication.translate("Form", u"Input for Energy", None))
         self.pushButton.setText(QCoreApplication.translate("Form", u"<- Return", None))
         self.label_3.setText(QCoreApplication.translate("Form", u"Input for speed", None))
-        self.pushButton_2.setText(QCoreApplication.translate("Form", u"Calculate", None))
         self.label.setText(QCoreApplication.translate("Form", u"Now we are looking for the mass", None))
         self.resultLabel.setText(QCoreApplication.translate("Form", u"Here results will be showed", None))
 

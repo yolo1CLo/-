@@ -9,9 +9,6 @@ class Ui_Form(object):
         self.c_DSB = QDoubleSpinBox(Form)
         self.c_DSB.setObjectName(u"c_DSB")
         self.c_DSB.setGeometry(QRect(480, 140, 62, 24))
-        self.pushButton_2 = QPushButton(Form)
-        self.pushButton_2.setObjectName(u"pushButton_2")
-        self.pushButton_2.setGeometry(QRect(330, 270, 80, 23))
         self.d_DSB = QDoubleSpinBox(Form)
         self.d_DSB.setObjectName(u"d_DSB")
         self.d_DSB.setGeometry(QRect(230, 140, 62, 24))
@@ -43,7 +40,6 @@ class Ui_Form(object):
 
     def retranslateUi(self, Form):
         Form.setWindowTitle(QCoreApplication.translate("Form", u"Form", None))
-        self.pushButton_2.setText(QCoreApplication.translate("Form", u"Calculate", None))
         self.label_4.setText(QCoreApplication.translate("Form", u"Now we are looking for the Work", None))
         self.label_3.setText(QCoreApplication.translate("Form", u"Input for Force", None))
         self.label_5.setText(QCoreApplication.translate("Form", u"Input for grade", None))

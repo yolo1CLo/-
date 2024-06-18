@@ -250,20 +250,18 @@ class Work_F(QMainWindow):
         self.ui.setupUi(self)
         self.stackWidget = stackWidget
 
-        self.c = self.ui.c_DSB.value()
         self.d = self.ui.d_DSB.value()
         self.w = self.ui.W_DSB.value()
-        self.ui.c_DSB.valueChanged.connect(self.calcWork)
         self.ui.d_DSB.valueChanged.connect(self.calcWork)
         self.ui.W_DSB.valueChanged.connect(self.calcWork)
 
     def calcWork(self):
-        self.c = self.ui.c_DSB.value()
+        self.c = 0.5
         self.d = self.ui.d_DSB.value()
         self.w = self.ui.W_DSB.value()
 
         try:
-            self.F = (self.ui.c * self.d * self.w)
+            self.F = (self.c * self.d * self.w)
             self.ui.resultLabel.setText(f"The work is equal to {self.F:.2f}")
         except ZeroDivisionError:
             self.ui.resultLabel.setText("Can't divide by Zero")

@@ -1,0 +1,24 @@
+17-10-2023 : 
+    - creation of project
+29-10-2023 :
+    - Creation calculator and test
+    - Did: quadratic, Newton, Speed, Kinetic_Energy, Work 
+    - Tried to understand the POO concept
+8-01-2024
+    - Did program to call the function when asked
+    - Did text
+    - Bug because I called the function wrongly
+10-01-2024
+    - Repaired Bug
+    - Managed to do the .lower(), so that the user can put any text
+    - Will do the formula thingy
+12-01-2024
+    - Worked on the missing variable problem
+    - Applied it on the rest of the formulas
+    - DividedByError
+
+11-03-2024
+    - Research on GUI
+
+
+31-03-2024

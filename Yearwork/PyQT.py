@@ -513,26 +513,21 @@ class MyWindow(QMainWindow):
     def __init__(self, stackWidget):
         super(MyWindow, self).__init__()
         self.ui = ui_main_screen_0.Ui_Form()
+        self.ui.setupUi(self)
         self.stackWidget = stackWidget
-        self.initUI()
-
-    def initUI(self):
-        self.setGeometry(100, 100, 800, 600)
-        self.setWindowTitle('Main Window')
-        self.pushButton = QtWidgets.QPushButton(self)
-        self.pushButton.setGeometry(QtCore.QRect(320, 250, 141, 51))
-        self.pushButton.setObjectName("pushButton")
-        self.pushButton.setText("Graph Generator")
         self.pushButton.clicked.connect(self.gotoGraphGenerator)
+        self.pushButton_2.clicked.connect (self.gotoCalc)
+
+    def gotoCalc (self):
+        self.stackWidget.setCurrentIndex (1)
 
     def gotoGraphGenerator(self):
-        self.stackWidget.setCurrentIndex(19)  # Assuming GraphGenerator is the 19th widget
+        self.stackWidget.setCurrentIndex(19)  
 
 def main():
     app = QApplication(sys.argv)
     stackWidget = QtWidgets.QStackedWidget()
-    
-    # Create instances of all windows
+
     main_window = MyWindow(stackWidget)
     calc_window = Calc(stackWidget)
     graph_window = GraphGenerator(stackWidget)
@@ -554,29 +549,27 @@ def main():
     kine_window_s = Kinetic_speed(stackWidget)
     kine_window_k = Kinetic_energy(stackWidget)
     
-    # Add all windows to stackWidget in the correct order
     stackWidget.addWidget(main_window)
     stackWidget.addWidget(calc_window)
     stackWidget.addWidget(quadr_window)
-    stackWidget.addWidget(newt_window)
+    stackWidget.addWidget (newt_window)
     stackWidget.addWidget(work_window)
     stackWidget.addWidget(speed_window)
     stackWidget.addWidget(kine_window)
     stackWidget.addWidget(newt__window_m)
-    stackWidget.addWidget(newt__window_a)
-    stackWidget.addWidget(newt__window_F)
-    stackWidget.addWidget(work_window_d)
-    stackWidget.addWidget(work_window_f)
-    stackWidget.addWidget(work_window_w)
-    stackWidget.addWidget(speed_window_d)
-    stackWidget.addWidget(speed_window_t)
-    stackWidget.addWidget(speed_window_s)
-    stackWidget.addWidget(kine_window_m)
-    stackWidget.addWidget(kine_window_s)
-    stackWidget.addWidget(kine_window_k)
-    stackWidget.addWidget(graph_window)
+    stackWidget.addWidget (newt__window_a)
+    stackWidget.addWidget (newt__window_F)
+    stackWidget.addWidget (work_window_d)
+    stackWidget.addWidget (work_window_f)
+    stackWidget.addWidget (work_window_w)
+    stackWidget.addWidget (speed_window_d)
+    stackWidget.addWidget (speed_window_t)
+    stackWidget.addWidget (speed_window_s)
+    stackWidget.addWidget (kine_window_m)
+    stackWidget.addWidget (kine_window_s)
+    stackWidget.addWidget (kine_window_k)
+    stackWidget.addWidget (graph_window)
     
-    # Set the index of the main window to be shown first
     stackWidget.setCurrentIndex(0)
     stackWidget.show()
     
